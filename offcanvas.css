@@ -8,6 +8,8 @@
     padding-top: 60px; 
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     z-index: 1000;
+    display: none; /* masqué par défaut */
+    transition: all 0.3s ease;
   }
   
   #sidebar-menu ul {
@@ -35,5 +37,19 @@
     border: none;
     border-top: 1px solid #7f8c8d;
     margin: 10px 0;
+  }
+  
+  #sidebar-menu.active {
+    display: block; /* affiché quand .active est présent */
+  }
+
+  #sidebarToggle {
+    display: block;
+    margin: 20px auto; /* auto pour centrer horizontalement */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:rgb(92, 89, 89);
   }
   
